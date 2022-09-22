@@ -16,5 +16,7 @@ func main() {
 	router.POST("products/", CreateProduct)
 	router.DELETE("products/:id/", DeleteProduct)
 
+	router.DELETE("test/:id", Playground)
+
 	router.Run()
 }
